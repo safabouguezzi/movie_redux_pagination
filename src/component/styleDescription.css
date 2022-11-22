@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 16px;
+}
+:root{
+    --primary-color:#1E1B26;
+    --secondary-color:#FE4141;
+    --bg-color : linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));
+    --text-color: #9B9B9B;
+    --title-color: #E7E7E7;
+    --width: 80%;
+}
+ html {
+    scroll-behavior: none;
+}
+
+body{
+    background: var(--bg-color);
+}
+  
+  /* ############################################################### */
+
+/* style description page */
+
+
+
+.descriptionPage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.descriptionPage> h1{
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 10px  0px;
+    /* text-decoration:  underline ; */
+    text-shadow: 0px 0px 2px var(--primary-color);
+}
+
+
+
+.movieDescriptionPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.movieDescriptionPage>.text{
+    padding: 0px 60px;
+    text-align: left;
+    height:20px;
+    font-size: 18px;
+}
+
+.text>h1 {
+    color: var(--title-color);
+    background-color: var(--secondary-color);
+    padding: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 24px;
+}
+
+.text> .desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding-left: 10px;
+    text-align: justify;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 30px;
+
+}
+.movieDescriptionPage>.trailer{
+    
+    margin-right: 75px;
+}
+
+.GoBack {
+        margin: 10px;
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        font-size: 1.5em;
+        font-weight: 400;
+}
+
+.GoBack:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+.GoBack:active{
+    background-color: var(--primary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.text {
+    margin-bottom: 50px !important;
+}
+
+.video {
+   width: 550px; height:350px ; border-radius:5px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .movieDescriptionPage{
+        flex-direction: column;
+        display: block;
+    }   
+
+    .video {
+        margin: auto;
+        display: block;
+        width: 250px; height:150px ; text-align: center;
+     }
+}
+
+/* @media only screen and (min-width: 641px) and (max-width: 1040px)  {
+
+} */
