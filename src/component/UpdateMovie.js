@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import "./style.css"
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { updateMovie } from "../redux_features/actions/actions";
-import {v4 as uuid4} from "uuid"
+// import {v4 as uuid4} from "uuid"
 
 const UpdateMovie = ({movie}) => {
-    const movies = useSelector(state => state.movieReducer)
+    // const movies = useSelector(state => state.movieReducer)
       const [show, setShow] = useState(false);
       const [updatedMovie, setUpdatedMovie] = useState({
         id: movie.id,

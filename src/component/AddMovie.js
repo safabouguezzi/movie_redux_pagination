@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { addMovie } from "../redux_features/actions/actions";
 import {v4 as uuid4} from "uuid"
 
-const AddMovie = ({}) => {
+const AddMovie = () => {
       const [show, setShow] = useState(false);
       const [newMovie, setNewMovie] = useState({
         id: uuid4(),

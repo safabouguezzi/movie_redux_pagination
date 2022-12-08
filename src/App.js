@@ -1,9 +1,9 @@
 
-import { useDispatch, useSelector } from 'react-redux';
+// import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Home from './component/Home';
-import  {increment}  from './redux_features/actions/actions';
-import {Routes, Route, Link, useParams , useNavigate} from "react-router-dom";
+// import  {increment}  from './redux_features/actions/actions';
+import {Routes, Route} from "react-router-dom";
 import Description from './component/Description';
 
 function App() {

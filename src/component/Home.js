@@ -1,15 +1,15 @@
 import "./style.css"
-import React, { useState } from 'react'
+import React from 'react'
 import MovieList from "./MovieList"
 import AddMovie from "./AddMovie"
 import Filter from "./Filter"
-import { useDispatch, useSelector } from "react-redux"
+// import { useDispatch, useSelector } from "react-redux"
 
 
 const Home = () => {
 
-  const movies = useSelector(state => state.movieReducer)
-  const dispatch = useDispatch()
+  // const movies = useSelector(state => state.movieReducer)
+  // const dispatch = useDispatch()
 
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styleDescription.css';
 import './style.css';
 
@@ -13,7 +13,7 @@ const Description = () => {
     const params = useParams()
   
 
-    let desc = movies.find(movie => movie.id == params.id)
+    let desc = movies.find(movie => movie.id === params.id)
    
     return (
         <div >
@@ -40,8 +40,11 @@ const Description = () => {
 
                 <div className='trailer'>
 
-                    <iframe  className='video'
-        frameBorder={0}  allowFullScreen
+                    <iframe  
+                    title="frame0"
+                    className='video'
+                    frameBorder={0}  
+                    allowFullScreen
                         src={desc.trailer}>
                     </iframe>
                   

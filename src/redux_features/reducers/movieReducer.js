@@ -1,4 +1,4 @@
-import {SEARCH, RATING, ADD_MOVIE, DELETE_MOVIE, UPDATE_MOVIE} from "../constants/actions-types"
+import { ADD_MOVIE, DELETE_MOVIE, UPDATE_MOVIE} from "../constants/actions-types"
 import {v4 as uuid4} from "uuid"
 
 const movies = [

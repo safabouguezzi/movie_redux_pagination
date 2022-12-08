@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import {Form} from "react-bootstrap"
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Rating } from "react-simple-star-rating";
 import { rating, search } from "../redux_features/actions/actions";
 import "./style.css";

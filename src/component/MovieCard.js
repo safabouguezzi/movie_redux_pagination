@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { BsFillPlayFill } from "react-icons/bs";
+// import { BsFillPlayFill } from "react-icons/bs";
 import {Card, Button } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Rating } from "react-simple-star-rating";
