@@ -15,7 +15,7 @@ const MovieCard = ({movie}) => {
   return (
     <div className="container">
     <Card className="card">
-      <Card.Img className="image" variant="top" src={movie.image} style={{ height: '18rem' }}/>
+      <Card.Img className="image" variant="top" src={movie.image} />
       <Card.Body>
         <Card.Title className="title">{movie.name}</Card.Title>
         <Rating 
